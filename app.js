@@ -106,3 +106,30 @@ if (grade >= 90) {
 }
 //Topic:Switch statement
 // Exercise1:
+
+let letter = "i";
+switch (letter) {
+  case "A":
+  case "E":
+  case "I":
+  case "O":
+  case "U":
+    console.log("The letter is vowel");
+    break;
+  default:
+    console.log("The letter is consonant");
+}
+
+// Topic Ternary operator:
+//Exercise:
+
+let number2 = -1;
+
+let sta =
+  number2 > 0
+    ? "Positive number"
+    : number2 < 0
+    ? "Negative number"
+    : "Number is Zero";
+
+console.log(sta);
