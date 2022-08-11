@@ -3,9 +3,10 @@
 // Exercise1:Write a function declaration
 
 function computeArea(width, height) {
-  let area = width * height;
   console.log(
-    `The area of a rectangle with a width is ${width} and a height of ${height} is ${area} square units`
+    `The area of a rectangle with a width is ${width} and a height of ${height} is ${
+      width * height
+    } square units`
   );
 }
 computeArea(2, 5);
@@ -25,9 +26,10 @@ console.log(planetHasWater("erth"));
 // Exercise 3:Arrow function
 
 const computeArea1 = (width, height) => {
-  let area = width * height;
   console.log(
-    `The area of a rectangle with a width is ${width} and a height of ${height} is ${area} square units`
+    `The area of a rectangle with a width is ${width} and a height of ${height} is ${
+      width * height
+    } square units`
   );
 };
 computeArea1(5, 6);
