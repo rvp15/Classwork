@@ -95,3 +95,14 @@ function stringsLongerThan(arrstr1, num) {
   return resultArray;
 }
 console.log(stringsLongerThan(["sami", "Ani", "vedha", "priyaa"], 3));
+
+//Exercise 10: A Function called addList that accepts any quantitty of numbers as arguments, adds them together and return the resulting sum
+
+function addList(...numbers) {
+  let summAll = 0;
+  for (let i = 0; i < numbers.length; i++) {
+    summAll += numbers[i];
+  }
+  return summAll;
+}
+console.log(addList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10));
