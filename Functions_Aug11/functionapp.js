@@ -34,7 +34,7 @@ const computeArea1 = (width, height) => {
 };
 computeArea1(5, 6);
 
-// #2:
+// Exercise 4:
 const planetHasWater1 = (a) => {
   let caseSen = a.toLowerCase();
   if (caseSen === "earth" || caseSen === "mars") {
