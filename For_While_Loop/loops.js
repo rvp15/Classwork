@@ -5,7 +5,7 @@ for (i = 1; i <= 10; i++) {
   console.log(i);
 }
 //Exercise 2:
-console.log("Exercise:2");
+
 for (i = 1; i <= 10; i = i + 2) {
   console.log(i);
 }
@@ -14,7 +14,7 @@ for (j = 2; j <= 10; j = j + 2) {
 }
 
 // Exercise 3:Multiple of 6:
-console.log("Exercise:3");
+
 for (i = 6; i <= 60; i++) {
   if (i % 3 == 0) {
     console.log(i);
