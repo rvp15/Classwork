@@ -33,7 +33,7 @@ function isCharAVowel(char) {
   }
 }
 console.log(isCharAVowel("a"));
-//Exercise 4:Afunction sumArray takes an array of numbers and returns the sum of all the numbers
+//Exercise 4:A function sumArray takes an array of numbers and returns the sum of all the numbers
 
 const sumArray = function (numArray) {
   let sum = 0;
@@ -43,6 +43,8 @@ const sumArray = function (numArray) {
   return sum;
 };
 console.log(sumArray([1, 2, 3, 4, 5]));
+
+
 //Exercise 5:function multiplyArray takes an array of numbers and returns the product of all the numbers.
 function multiplyArray(numbers) {
   let result = 1;
@@ -81,20 +83,20 @@ const longestStringArray = (...arrayStrings) => {
   }
   return longstring;
 };
-console.log(longestStringArray("vedha", "priyaa", "raja"));
+console.log(longestStringArray("vedha", "priyaa", "raj"));
 
 // Exercise 9:Function stringsLongerThan, takes an array of strings  and a number as arguments and returns an array of the strings that are longer than the number passed
 
 function stringsLongerThan(arrstr1, num) {
   let resultArray = [];
   for (let i = 0; i < arrstr1.length; i++) {
-    if (arrstr1[i].length > num) {
+    if (arrstr1[i].length >= num) {
       resultArray.push(arrstr1[i]);
     }
   }
   return resultArray;
 }
-console.log(stringsLongerThan(["sami", "Ani", "vedha", "priyaa"], 3));
+console.log(stringsLongerThan(["sami", "Ani", "vedha", "priyaa"], 4));
 
 //Exercise 10: A Function called addList that accepts any quantitty of numbers as arguments, adds them together and return the resulting sum
 
