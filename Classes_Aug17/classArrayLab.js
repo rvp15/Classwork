@@ -24,54 +24,59 @@
 // blacky.cute()
 // whitey.vaccinated()
 
-
 //Exercise 2:
 
-
-class Pirate{
-    constructor(name,age,scury,lemons){
-        this.name=name
-        this.age=age
-        this.scury=scury
-        this.lemons=lemons
-    }
-    method1(){
-console.log('method1')
-    }
-    method2(){
-        console.log('method2')
-            }
-            method3(){
-                console.log('method3')
-                    }
-
-
+class Pirate {
+  constructor(name, age, scury, lemons) {
+    this.name = name;
+    this.age = age;
+    this.scury = scury;
+    this.lemons = lemons;
+  }
+  method1() {
+    console.log("method1");
+  }
+  method2() {
+    console.log("method2");
+  }
+  method3() {
+    console.log("method3");
+  }
 }
-const priateArray1 = [new Pirate ('BlackBeard', 46, 'yes', 'yes'),new Pirate ('Captain Hook', 204, 'no', 'yes'),new Pirate ('Privatedeck', 22, 'yes', 'no')]
+const priateArray1 = [
+  new Pirate("BlackBeard", 46, "yes", "yes"),
+  new Pirate("Captain Hook", 204, "no", "yes"),
+  new Pirate("Private", 22, "yes", "no"),
+];
 
-const priateArray2 = [new Pirate ('BlackBeard2', 55, 'yes', 'yes'),new Pirate ('Captain Hook2', 24, 'no', 'yes'),new Pirate ('Privatedeck2', 92, 'yes', 'no')]
+const priateArray2 = [
+  new Pirate("BlackBeard2", 55, "yes", "yes"),
+  new Pirate("Captain Hook2", 24, "no", "yes"),
+  new Pirate("Private2", 92, "yes", "no"),
+];
 
-
-for(const elements of priateArray1)
-{
-    console.log(`${elements.name} , ${elements.age} , ${elements.scury},${elements.lemons}`)
+for (const elements of priateArray1) {
+  console.log(
+    `${elements.name} , ${elements.age} , ${elements.scury},${elements.lemons}`
+  );
 }
 
-for(const elements of priateArray2)
-{
-    console.log(`${elements.name} , ${elements.age} , ${elements.scury},${elements.lemons}`)
+for (const elements of priateArray2) {
+  console.log(
+    `${elements.name} , ${elements.age} , ${elements.scury},${elements.lemons}`
+  );
 }
 
 //Exercise 3:
 
-class Car{
-    constructor(num){
-        this.num=num
-    }
+class Car {
+  constructor(num) {
+    this.num = num;
+  }
 }
 
-const freighter = []
-for(let i=0;i<100;i++){
-    freighter.push(new Car(i))
+const freighter = [];
+for (let i = 0; i < 100; i++) {
+  freighter.push(new Car(i));
 }
-console.log(freighter)
+console.log(freighter);
