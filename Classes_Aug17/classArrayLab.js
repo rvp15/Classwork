@@ -47,9 +47,9 @@ console.log('method1')
 
 
 }
-const priateArray1 = [new Pirate ('BlackBeard', 46, 'yes', 'yes'),new Pirate ('Captain Hook', 204, 'no', 'yes'),new Pirate ('Private deck', 22, 'yes', 'no')]
+const priateArray1 = [new Pirate ('BlackBeard', 46, 'yes', 'yes'),new Pirate ('Captain Hook', 204, 'no', 'yes'),new Pirate ('Privatedeck', 22, 'yes', 'no')]
 
-const priateArray2 = [new Pirate ('BlackBeard2', 55, 'yes', 'yes'),new Pirate ('Captain Hook2', 24, 'no', 'yes'),new Pirate ('Private deck2', 92, 'yes', 'no')]
+const priateArray2 = [new Pirate ('BlackBeard2', 55, 'yes', 'yes'),new Pirate ('Captain Hook2', 24, 'no', 'yes'),new Pirate ('Privatedeck2', 92, 'yes', 'no')]
 
 
 for(const elements of priateArray1)
