@@ -44,10 +44,12 @@ const radio = {
   ],
 
   changeStation() {
-    let selectStation = Math.floor(Math.random() * 5);
-    let selectSong = Math.floor(Math.random() * 4);   
-    let path = radio.stations[selectStation]['songs'][selectSong];
-
+    let selectStation = Math.floor(Math.random() * radio.stations.length);//get the length of the  dynamically as it changes. it gives random number from 0 to one less than lenth of station 
+    
+    let selectSong = Math.floor(Math.random() * radio.stations[selectStation].songs.length);   
+    // let path = radio.stations[selectStation]['songs'][selectSong];
+    let path = radio.stations[selectStation].songs[selectSong]; //path from radio to random stations to random songs 
+   
      console.log(`Now Playing ${path.title} by ${path.artist}`)
 
   }
