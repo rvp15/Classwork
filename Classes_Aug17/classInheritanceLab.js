@@ -71,17 +71,17 @@ class Person {
 
 
 class BankAccount {
-    constructor() {
-      this.ownerName = "Vedhapriya";
-      this.balance = 9000;
-      this.accNum = "XA12345";
+    constructor(ownerName,balance,accNum) {
+      this.ownerName = ownerName;
+      this.balance = balance;
+      this.accNum = accNum;
     }
   
-    deposit() {
-      let amount = 1000;
-      this.balance += amount;
+    deposit(depsoitamt) {
+     
+      this.balance += depsoitamt;
       console.log(
-        `${this.ownerName} deposits ${amount} and balance ${this.balance}`
+        `${this.ownerName} deposits ${depsoitamt} and balance ${this.balance}`
       );
     }
   
@@ -94,34 +94,39 @@ class BankAccount {
   }
   
   class CheckingAccount extends BankAccount {
-    constructor(overdraftEnabled) {
-      super();
-      this.overdraftEnabled = overdraftEnabled;
+    constructor(overdraftEnabled,amount) {
+      super(ownerName,balance,accNum);
+      this.overdraftEnabled = true;
     }
   
     withdraw(amount){
-        if(amount<=this.balance || this.overdraftEnabled){
+        if(amount<=this.balance){
             super.withdraw(amount)
         }else{
-            console.log("Overdraft is disabled for your account")
+            console.log("You are overdrafting from your account with penality fee")
+            amount=amount+25
+            super.withdraw(amount)
         }
 }
     }
   
   
   class SavingsAccount extends BankAccount {
+    constructor(){
+      super()
+    }
     withdraw() {
       console.log("Withdrawal is disabled completely");
     }
   }
   
   const ch1 = new CheckingAccount(true);
-  ch1.withdraw(10000);
   
-  const ch2 = new CheckingAccount(false);
-  ch2.withdraw(10000);
+  const vedha =new BankAccount('vedha',200000,987654342)
+ const sudiksha= new SavingsAccount('sudiksha',100000,384642644)
+  const ruthvik= new CheckingAccount('ruthvik',30000,8765677223)
   
-  const savingAcc1= new SavingsAccount()
-  const savingAcc2= new SavingsAccount()
 
-  savingAcc1.withdraw()
+  // sudiksha.withdraw()
+  ruthvik.withdraw(400)
+ 
