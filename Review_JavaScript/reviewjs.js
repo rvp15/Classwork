@@ -113,7 +113,7 @@ for(let i=0;i<=100;i++){
 //A.
 //1.Each thing in an arry is called element
 //2.no
-//3.single array example:array of fence dimensional array: egg boc
+//3.single array example:array of fence ,dimensional array: Egg box
 
 //B.Easy Does it:
 //1.creat an array with quotes
@@ -156,4 +156,174 @@ else console.log('Monkey')
 
 //H.What is in your closet:
 
+const kristynsCloset =['lefy shoe','cowboy boots','right socks','GA hoodie','green pants','yellow knit hats','marshmallow peeps'];
+const thomsCloset=[['grey button-up','dark gery button-up','ligh blut button-up','blue button-up'],['grey jeans','jeans','PJs'],['wool mittens','wool scarf','raybans']];
+//1.
+console.log(`Kristyns is rocking that ${kristynsCloset[2]} today!`)
+//2.
+//array.splice(start, deleteCount, 'insert element');
+kristynsCloset.splice(6,0,'raybans')
+//3.
+kristynsCloset[5]='stained knit hat'
+//4.
+let thomFirstArray = thomsCloset [0]
+//5.
+let thomPantEle = thomsCloset[1][0]
+//6.
+let thomAccessoryEle = thomsCloset[2][0]
+//7.
+console.log(`Thom is looking fierce in a ${thomsCloset[0][0]},${thomsCloset[1][1]} and ${thomsCloset[2][1]}!`)
+//8. 
+thomsCloset[1][2]='Footie Pajamas'
+console.log(thomsCloset)
 
+// IV. Functions
+//A. PrintGreeting
+ const printGreeting=(name)=>(`Hello there, ${name}!`)
+ console.log(printGreeting('vedha'))
+
+ //B.printCool
+const printCool=(name1)=>(`${name1} is cool`)
+console.log(printCool('vedha'))
+
+//C.calculateCube:
+  const calculateCube = (a) => (a*a*a)
+  console.log(calculateCube(5))
+
+  //D.isVowel:
+
+  function isVowel(string){
+    if(string.toLowerCase()===('a'||'e'||'i'||'o'||'u')){
+        console.log(`${string} is a vowel`)
+    }else {
+        console.log(`${string} is a not vowel`)
+    }
+  }
+  isVowel('k')
+ //another way
+function isVowel1(check){
+    const arr1 =['a','e','i','o','u']
+    if (arr1.includes(check.toLowerCase())){
+      return true 
+    }else return false
+    }
+    console.log(isVowel1('f'))
+    
+//E.getTwoLengths
+getTwoLengths=(a,b)=>d=[a.length,b.length]
+console.log(getTwoLengths('Hank','hippopalous'))
+
+//F.getMultipleLengths
+function getMultipleLength(strings){
+    return newArr=strings.map(element=>element.length)}
+
+console.log(getMultipleLength(['hello','what','is','up','dude']))
+
+//G.maxOfThree
+//method 1:
+const maxOfThree=(x,y,z)=>(Math.max(x,y,z))
+console.log(maxOfThree(49,4,4))
+//method 2:
+function maxOfThree(x,y,z){
+    let max=0
+    if(x>y) max=x 
+    else max=y
+    if(z>max) max=z
+    return max
+}
+console.log(maxOfThree(2,6,16))
+
+//H.printLongestWord
+
+function printLongestWord(wordArray){
+    let longestWord=''
+   for(let i=0;i<wordArray.length;i++){
+    if(wordArray[i].length>longestWord.length){
+        longestWord=wordArray[i]
+    }
+   }return longestWord
+}
+console.log(printLongestWord(['BoJack','Princess','Diane','a','Max','Peanutbutter','big']))
+
+//Objects:
+const user={
+    name:'Jack',email:'jacksparrow@gmail.com',age:44,purchased:[]
+}
+//B.Update user
+user.email='jacksparrow78@gmail.com'
+user.age++
+//C.Adding keys and vale:
+user.location='Califorina'
+//D.Shopaholic
+user.purchased.push('carbohydrates','peace of mind','Merino jodhpurs')
+console.log(user)
+console.log(user.purchased[2])
+//E.Object within object:
+
+//1.
+user.friend={
+    name:'Grace Hopper',age:77,location:'SFO',purchased:[]
+}
+//2.
+console.log(user.friend.name)
+//3.
+console.log(user.friend.location)
+//4.
+user.friend.age=55
+//5,6:
+user.friend.purchased.push('The One Ring','A latte')
+//7:
+console.log(user.friend.purchased[1])
+
+//F.Loops
+//1.
+for(let elements in user.purchased){
+    console.log(user.purchased[elements])
+}
+//2.
+for (let element in user.friend.purchased){
+    console.log(user.friend.purchased[element])
+}
+//G.Function can operate on object:
+//1.
+//Objects:
+const user={
+    name:'Jack',email:'jacksparrow@gmail.com',age:44,purchased:[],
+updateUser()
+{
+ user.age++
+ user.name.toUpperCase()
+ },
+oldAndLoud(person){
+    console.log(person.age++)
+   console.log( person.name.toUpperCase())
+}
+}
+user.oldAndLoud(user)
+console.log((user))
+
+//Cat Combinator:
+//1.Mama cat
+const cat1={
+    name:'BumbleBee',breed:'Calico',age:2
+}
+console.log(cat1.age)
+console.log(cat1.breed)
+//2.Papa cat:
+const cat2={
+    name:'Lucifer',breed:'Persian',age:3
+}
+//3.Combine cats:
+ function combineCats(mama,papa){
+    let combCat={
+        name:mama.name + papa.name,
+        age:1,
+        breed:mama.breed +'-'+papa.breed
+    }
+    return combCat
+ }
+console.log(combineCats(cat1,cat2))
+
+//4.Cat brain bender
+
+console.log(combineCats(combineCats(cat1,cat2),combineCats(cat1,cat2)))

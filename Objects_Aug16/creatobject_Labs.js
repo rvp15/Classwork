@@ -11,7 +11,7 @@
 
 
 // Shift + Enter to add a new line
-// peed(){
+// speed(){
 //         console.log('Maximum 140mph')
 //     }
 // }
