@@ -284,7 +284,10 @@ for(let elements in user.purchased){
 for (let element in user.friend.purchased){
     console.log(user.friend.purchased[element])
 }
+
+
 //G.Function can operate on object:
+
 //1.
 //Objects:
 const user={
@@ -324,6 +327,5 @@ const cat2={
  }
 console.log(combineCats(cat1,cat2))
 
-//4.Cat brain bender
-
+//4.Cat brain bender:
 console.log(combineCats(combineCats(cat1,cat2),combineCats(cat1,cat2)))
