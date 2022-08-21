@@ -10,7 +10,6 @@
 //     s
 
 
-// Shift + Enter to add a new line
 // speed(){
 //         console.log('Maximum 140mph')
 //     }
