@@ -113,7 +113,7 @@ for(let i=0;i<=100;i++){
 //A.
 //1.Each thing in an arry is called element
 //2.no
-//3.single array example:array of fence ,dimensional array: Egg box
+//3.single array example:list of students name ,dimensional array: Egg box
 
 //B.Easy Does it:
 //1.creat an array with quotes

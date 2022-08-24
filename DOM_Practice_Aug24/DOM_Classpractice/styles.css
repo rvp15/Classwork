@@ -1,0 +1,17 @@
+body{
+    background-color: rgb(155, 108, 154);
+}
+#title{
+    background-color: rgb(95, 65, 27);
+}
+.main-title{
+    color: rgb(101, 94, 86);
+    color: rgb(228, 247, 241);
+}
+p{
+background-color: rgb(246, 207, 189);
+
+    color: blue;
+    border-style: double;
+    border-color: blueviolet;
+}
