@@ -30,11 +30,10 @@ document.querySelector('ul').appendChild(li)
 
 // li.addEventListener('click', (e) => { e.stop(Propagation(); });
 
-// input.value=''
 
 })
 
-// li.addEventListener('click', (e) => { e.stopPropagation() });
+
 
 
 //////////////////////////////////////////////////////////////
@@ -54,7 +53,7 @@ function handleClick(evt){
 }
 
 //////////////////////////////
-
+//making h3 change color on clicking
 const h3text=document.querySelector('h3')
 h3text.addEventListener('click',function(eve){
 h3text.style.color='red'
