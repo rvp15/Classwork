@@ -90,7 +90,7 @@ console.log(favMovies.length)
 // //Find Mid index of array:
 
 console.log(favMovies)
-let afterSlice=favMovies.slice(0,Math.floor((favMovies.length)/2))
+let afterSlice=favMovies.slice(Math.floor((favMovies.length)/2))
 //does not alters the original array permanently
 
 //9.
@@ -172,7 +172,7 @@ const kristynsCloset = [
   kristynsShoe = kristynsCloset[0];
   
   //Adding left shoe to thom's closet
-  thomsCloset.push(kristynsShoe);
+  thomsCloset[2].push(kristynsShoe);
   console.log(thomsCloset);
   //////////////////////////////////////////////////////////////////////////////////////////////
   //Dress Us Up:

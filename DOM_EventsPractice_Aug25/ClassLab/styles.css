@@ -1,0 +1,11 @@
+body{
+    background-color: rgb(160, 167, 164);
+}
+ul{
+    border-style: double;
+}
+li{
+    background-color: azure;
+    border-radius: 5px;
+    border-style:inset
+}
