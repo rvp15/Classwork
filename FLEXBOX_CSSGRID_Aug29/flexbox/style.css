@@ -1,0 +1,30 @@
+* {
+    /* height & width now includes border & padding */
+    box-sizing: border-box;
+  }
+  /* margin for the entire body and font */
+  
+  body {
+
+    margin: 0;
+    font-family: Helvetica;
+  }
+  nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 50px;
+    outline: 2px solid brown;
+   background-color: #a2cbb6;
+   font-size: 20px;
+   /* margin: top,right,bottom,left ; */
+   margin: 10px;
+   color: #f3dba8;
+}
+div{
+    padding: 13px;
+    justify-content: center;
+}
+nav > div:last-child{
+    margin-left: auto;
+}

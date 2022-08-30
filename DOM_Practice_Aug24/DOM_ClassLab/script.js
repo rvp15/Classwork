@@ -1,4 +1,3 @@
-//Tasks:
 
 //Task 1.0
 
@@ -119,7 +118,7 @@ topMenuEl.addEventListener("click", function (event) {
       break;
     }
   }
-
+// console.log(clickedItem)
   //Task 5.3:
   // console.log(event.target.classList)
   if (event.target.classList === "active") {
@@ -138,10 +137,10 @@ topMenuEl.addEventListener("click", function (event) {
   // event.target.setAttribute('class','active')
   //or
   event.target.classList.add("active");
-  // console.log(topMenuLinks.classList)
+ 
 
   // Task 5.6:
-  console.log(event.target.children);
+  console.log(event.target.menuLinks);
   if (event.target.children) {
     showingSubMenu = true;
   } else {
