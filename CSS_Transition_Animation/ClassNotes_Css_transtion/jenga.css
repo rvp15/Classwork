@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    background-color: black;
+    height: 100vh;
+    color: white;
+}
+#container {
+    border: 1px solid grey;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.item {
+    width: 100px;
+    height: 50px;
+    border: 1px solid white;
+}
+.item:nth-child(even) {
+    background-color: rgb(56, 55, 53);
+}
+h1 {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    margin-top: 50%;
+    color: black;
+    transition-property: color;
+    transition-duration: 5s;
+    transition-delay: 4s;
+}
+
+/*  ANIMATION RELATED BELOW */
+
+/*  TRANSITIONS  */
+
+/* base class */
+.item-1{
+
+    background-color: rgb(83, 245, 245);
+    width: 100px;
+    /* specify a property to watch for change */
+    /* transition-property:  background-color;
+    /*how long your transition will take: 500ms or less is good */
+      /* transition-duration: 2s; */
+      /* how your transition will progress through time */
+    /* transition-timing-function: ease-in; */
+    /* how long to wait before starting ur transition */
+    /* transition-delay: 1s; */
+
+/* shorthand */
+/* property duration timingfunction delay */
+transition: background-color,width 500ms,500ms ease-in ;
+}
+/* modifying class */
+.item-1:hover{
+background-color: rgb(122, 71, 5);
+width: 250px;
+}
+
+/* ///////////////////////////////////////// */
+/* transform */
+/* base class */
+.item-2{
+transition: transform,background-color 1s,1s ease-in 200ms;
+}
+/* modifying class */
+.item-2:hover{
+    transform: translate(-50px);
+    background-color: rgb(234, 194, 146);
+
+}
+/* ///////////////////////rotate////////////////////////// */
+.item-3{
+transition: transform 2s ease-in;
+}
+.item-3:hover{
+    transform: rotate(30deg);
+}
+/* //////////////////////Animation/////////////////////////////// */
+.item-4:hover{
+    /* animation-name,duration,timingfunc,delay,animationiterationcount,
+    animationdirection*/
+   
+animation: growtall 2s ease-in 100ms;
+animation-iteration-count: 3;
+animation-direction: alternate;
+animation-fill-mode: forwards;
+animation-play-state: running;
+}
+
+@keyframes growtall{
+    /* from{
+        height: 50px;
+    }
+    to{
+        height: 500px;
+    } */
+    0%{
+        height: 50px;
+    }
+    50%{
+        height: 100px;
+        background-color: aqua;
+    }
+    75%{
+        height: 150px;
+        background-color: rgb(238, 101, 172);
+    }
+    100%{
+        height: 500px;
+        background-color: rgb(152, 244, 90);
+    }
+}
+    

@@ -1,0 +1,244 @@
+body {
+  margin: 100px;
+}
+/* //////////////////The Piston///////////// */
+.box1 {
+  width: 100px;
+  height: 100px;
+  background-color: aquamarine;
+  margin: 5px;
+}
+.b1 {
+  transition: width 2s ease-in-out;
+}
+.b1:hover {
+  width: 300px;
+}
+
+.b2 {
+  transition: width 2s ease-in-out 2s ;
+ }
+.b1:hover ~ .b2 {
+  width: 300px;
+}
+
+.b1::after + .b2 {
+  width: 100px;
+}
+/* ////////////////////////The Fortune Teller////////////////////// */
+span {
+  position: absolute;
+ z-index: -1000;
+ font-size: 25px;
+ padding: 65px;
+
+}
+.part2 {
+  max-width: 200px;
+  padding: 100px;
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto auto;
+  grid-template-areas:
+    "b11 b12"
+    "b13 b14";
+}
+.bx1 {
+  width: 100px;
+  height: 100px;
+  margin: 1px;
+}
+
+.b11 {
+  background-color: rgb(199, 237, 63);
+  grid-area: b11;
+  transition: transform 2s ease-in-out;
+  transform-origin: top left;
+}
+.b12 {
+  background-color: rgb(237, 179, 63);
+  grid-area: b12;
+  transition: transform 2s ease-in-out;
+  transform-origin: top right;
+}
+.b13 {
+  background-color: rgb(207, 204, 7);
+  grid-area: b13;
+  transition: transform 2s ease-in-out;
+  transform-origin: bottom left;
+}
+.b14 {
+  background-color: rgb(159, 204, 246);
+  grid-area: b14;
+  transition: transform 2s ease-in-out;
+  transform-origin: bottom right;
+}
+.part2:hover .b11 {
+  transform: rotate(90deg);
+}
+.part2:hover .b12 {
+  transform: rotate(-90deg);
+}
+.part2:hover .b13 {
+  transform: rotate(-90deg);
+}
+.part2:hover .b14 {
+  transform: rotate(90deg);
+}
+.part2:hover span {
+  opacity: 6;
+}
+/* ///////////////////////////////jenga//////////////////////////////////////// */
+.part3 {
+  /* border: 1px solid grey; */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.item {
+  width: 100px;
+  height: 50px;
+  border: 1px solid rgb(249, 175, 175);
+  background-color: rgb(173, 239, 217);
+}
+.item:nth-child(even) {
+  background-color: rgb(251, 204, 109);
+}
+/* ////////////////////// */
+.item-1 {
+  transition: transform, 1s, 1s ease-in 200ms;
+ }
+.item-1:hover {
+  transform: translatey(450px);
+  animation: bounce 3s ease-in;
+  animation-direction:alternate;  
+  animation-fill-mode: forwards;
+  animation-iteration-count:2.2;
+  animation-play-state: running;
+}
+
+/* //////////////////////////// */
+.item-2 {
+  transition: transform 1s 1s ease-in 200ms;
+
+}
+.item-1:hover + .item-2 {
+  transform: translatey(400px);
+  animation: bounce 3s ease-in;
+  animation-direction:alternate;  
+  animation-fill-mode: forwards;
+  animation-iteration-count:2.2;
+  animation-play-state: running;
+}
+
+/* //////////////////////////// */
+.item-3 {
+  transition: transform 1s 1s ease-in 200ms;
+}
+.item-1:hover ~ .item-3 {
+  transform: translatey(350px);
+  animation: bounce 3s ease-in;
+  animation-direction:alternate;  
+  animation-fill-mode: forwards;
+  animation-iteration-count:2.2;
+  animation-play-state: running;
+}
+
+/* ///////////////////////// */
+.item-4 {
+    transition: transform, 1s, 1s ease-in 200ms;
+  }
+  .item-1:hover ~ .item-4 {
+    transform: translatey(300px);
+    animation: bounce 3s ease-in;
+  animation-direction:alternate;  
+  animation-fill-mode: forwards;
+  animation-iteration-count:2.2;
+  animation-play-state: running;
+  }
+  @keyframes bounce {
+    0% { transform: translateY(0); }
+    1000% { transform: translateY(10px); }
+}
+  /* //////////////////////// */
+  .item-5 {
+    transition: transform 1s 1s ease-in 200ms;
+  }
+  .item-1:hover ~ .item-5 {
+    transform: translatey(250px);
+    animation: bounce 3s ease-in;
+  animation-direction:alternate;  
+  animation-fill-mode: forwards;
+  animation-iteration-count:2.2;
+  animation-play-state: running;
+  }
+  
+  /* //////////////////////////////// */
+  .item-6 {
+    transition: transform 1s 1s ease-in 200ms;
+  }
+  .item-1:hover ~ .item-6 {
+    transform: translatey(200px);
+    animation: bounce 3s ease-in;
+  animation-direction:alternate;  
+  animation-fill-mode: forwards;
+  animation-iteration-count:2.2;
+  animation-play-state: running;
+  }
+
+  /* ///////////////////////////////////// */
+  .item-7 {
+    transition: transform 1s 1s ease-in 200ms;
+  }
+  .item-1:hover ~ .item-7 {
+    transform: translatey(150px);
+    animation: bounce 3s ease-in;
+  animation-direction:alternate;  
+  animation-fill-mode: forwards;
+  animation-iteration-count:2.2;
+  animation-play-state: running;
+  }
+  @keyframes bounce {
+    0% { transform: translateY(0); }
+    1000% { transform: translateY(10px); }
+}
+  /* /////////////////////////////////////// */
+  .item-8 {
+    transition: transform 1s 1s ease-in 200ms;
+  }
+  .item-1:hover ~ .item-8 {
+    transform: translatey(100px);
+    animation: bounce 3s ease-in;
+  animation-direction:alternate;  
+  animation-fill-mode: forwards;
+  animation-iteration-count:2.2;
+  animation-play-state: running;
+  }
+  
+  /* //////////////////////////////////////// */
+  .item-9 {
+    transition: transform 1s 1s ease-in 200ms;
+  }
+  .item-1:hover ~ .item-9 {
+    transform: translatey(50px);
+    animation: bounce 3s ease-in;
+  animation-direction:alternate;  
+  animation-fill-mode: forwards;
+  animation-iteration-count:2.2;
+  animation-play-state: running;
+  }
+
+  /* /////////////////////////////////////////// */
+  .item-10 {
+    transition: transform 1s 1s ease-in 200ms;
+  }
+  .item-1:hover ~ .item-10 {
+    transform: translatey(0px);
+    animation: bounce 3s ease-in;
+  animation-direction:alternate;  
+  animation-fill-mode: forwards;
+  animation-iteration-count:2.2;
+  animation-play-state: running;
+  }

@@ -1,0 +1,25 @@
+body{
+    outline: 1px solid black;
+    margin: 0%;
+    display: flex;
+    flex-wrap: wrap;
+}
+section{
+    outline: 5px solid black;
+    height: 200px;
+    width: 33%;
+    background-color: brown;
+}
+@media (max-width:700px) {
+    section{
+        background-color: aqua;
+        width: 50%;
+    }
+}
+
+@media (max-width:500px) {
+    section{
+        background-color: blueviolet;
+        width: 100%;
+    }
+}
