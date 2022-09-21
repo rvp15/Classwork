@@ -11,8 +11,12 @@ app.get('/' ,(req,res)=>{
 res.send('<h1>Hello Express</h1>')
 })
 
+app.get('/home',(req,res)=>{
+    res.send(' <h1>HOME PAGE</h1><p>Learning Express </p>')
+})
 //4 Listen method(to listen http requesr from client)
 //2 arguments->port, callbackfun
 app.listen(3000,()=>{
     console.log("Listening on port 3000")
 })
+
