@@ -1,0 +1,44 @@
+/* *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    height: 100vh;
+} */
+
+.cards{
+    margin: 150px auto;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 20px  ;
+
+}
+.card{
+  box-shadow: 0 0 3px rgba(0,0,0,1);
+  max-height: 300px;
+  background:#dcd9d9;
+}
+.cardimg{
+    width: 100%;/* important to set image inside that box*/
+    
+}
+.card_content{
+    line-height: 1.5;
+    font-size: .9em;
+    padding: 15px;
+    background:#dcd9d9;
+   }
+   .link1:hover{
+
+ }
+   /* .cardlink{
+    text-decoration: none;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(208, 208, 203);} */

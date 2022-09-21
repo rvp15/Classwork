@@ -1,0 +1,54 @@
+/* Import font style */
+@font-face {
+    font-family: Rabbit;
+    src: url(../fonts/Rabbit.otf);
+}
+@font-face {
+    font-family: Champagne;
+    src: url(../fonts/Champagne.ttf);
+}
+
+body{
+    font-size: 20px;
+    line-height: 1.5;
+    color: rgb(128, 124, 124);
+    background-color: rgb(146, 144, 141);
+}
+.container{
+    max-width: 960px;
+    margin: 100px auto auto;
+    padding: 10px;
+    display: grid;
+    grid-template-columns:repeat(3,1fr);/* create 3 column with same size*/
+    grid-template-columns:repeat(auto-fill,minmax(200px,1fr)) ;
+    
+    gap: 10px;
+    grid-auto-rows: minmax(200px,auto);/*creates rows with mini 200px and maxi row grows to fit content*/
+/* grid-template-columns: 1fr 1fr 1fr; */
+/* align propertu */
+/* align-items: center;aligns the content in the center ox flex box */
+}
+/* Spanning the grid boxes */
+.item:nth-child(1){
+    background-color: aquamarine;
+    grid-column: 1/3; 
+    /* or grid-column: 1/span 2; */
+}
+.item:nth-child(3){
+    background-color: rgb(87, 112, 104);
+    grid-row: 2/4;
+}
+.item{
+    background-color: rgb(156, 185, 175);
+    color: aliceblue;
+    font-size: 25px;
+    padding: 20px;
+    border: skyblue 1px solid;
+}
+/* Media Query:used to wrap the grid */
+
+@media(max-width: 500px){
+    .container{
+        grid-template-columns: 1fr;
+    }
+}

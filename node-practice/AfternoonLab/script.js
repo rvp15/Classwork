@@ -4,5 +4,5 @@ for (let i = 0; i < 10; i++) {
 }
 
 const circle =  require('./utilities/circle');
- console.log(circle.area(50));
- console.log(circle.circumference(75));
+ console.log(`Area of Circle: ${circle.area(50)}`);
+ console.log(`Circumference of circle: ${circle.circumference(75)}`);

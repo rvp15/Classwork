@@ -13,11 +13,11 @@
 
 // //   console.log('message 2')
 
-// let daysOfTheWeek = require('./days-of-the-week') // its a module we created so give the path name to import that module
-// // console.log(daysOfTheWeek)
-// // now we are able to access the created module day-ofthe-week with some content (PerScholas) added
-//  let day1 = daysOfTheWeek.getWeekday
-//  console.log(day1)
+let daysOfTheWeek = require('./days-of-the-week') // its a module we created so give the path name to import that module
+// console.log(daysOfTheWeek)
+// now we are able to access the created module day-ofthe-week with some content (PerScholas) added
+ let day1 = daysOfTheWeek.getWeekday
+ console.log(day1)
 
 ///////////////////////////////////////////////////////////////////////
 let request = require('request')
