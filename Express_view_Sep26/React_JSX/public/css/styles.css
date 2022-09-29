@@ -1,0 +1,8 @@
+body{
+    /* background-color: rgb(167, 233, 211); */
+    background-image: linear-gradient(to left, rgba(200, 165, 165, 0), rgb(124, 156, 161));
+ 
+}
+#fruits-index{
+    font-size: 30px;
+}
